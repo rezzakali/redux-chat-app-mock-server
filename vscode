@@ -1,0 +1,208 @@
+{
+  "workbench.colorCustomizations": {
+    "statusBar.border": "#0000002a",
+    "statusBar.focusBorder": "#00000027",
+    "statusBar.background": "#2c2b2b75",
+    "statusBar.noFolderBackground": "#00000059",
+    "statusBar.debuggingBackground": "#263238",
+    "editorLineNumber.foreground": "#504c4fc7",
+    "focusBorder": "#110e0e00",
+    // single quates prettier
+    "prettier/prettier": ["error", { "singleQuote": true, "parser": "flow" }],
+    // select highlighted styling
+
+    "editor.selectionHighlightBackground": "#7b7b7c2d",
+    "editor.selectionHighlightBorder": "#7b7b7c3a",
+    "editor.wordHighlightBackground": "#7b7b7c3a",
+
+    // selection
+
+    "editor.selectionBackground": "#969b9a2c"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  // config related to code formatting
+
+  "[javascript, typescript, html,vue]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // for javascript
+  // "emmet.showExpandedAbbreviation": "never",
+  "javascript.format.semicolons": "insert",
+
+  // config related to code formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.alwaysShowStatus": true,
+
+  "javascript.validate.enable": true, //disable all built-in syntax checking
+
+  // emmet
+
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "razor": "html",
+    "plaintext": "ejs"
+  },
+
+  "files.associations": {
+    "*.js": "javascript",
+    "*.php": "php"
+  },
+  // explorer
+
+  "explorer.confirmDelete": false,
+  // workbence
+
+  "workbench.startupEditor": "none",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.git": false,
+    "**/.project": true,
+    "**/.settings": true
+  },
+
+  "bracketPairColorizer.depreciation-notice": false,
+
+  // material icon theme
+
+  "material-icon-theme.folders.theme": "specific",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.color": "#90a4ae",
+  "material-icon-theme.hidesExplorerArrows": false,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+
+  // suggest
+
+  "editor.suggest.showStatusBar": true,
+
+  // formatter
+
+  "[html,css,javascript,javascriptreact,vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascript,react,javascriptreact,vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // editor
+
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontSize": 19,
+  "editor.fontWeight": "100",
+  "editor.suggestFontSize": 16,
+  "editor.suggest.preview": true,
+  "editor.suggest.showColors": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorStyle": "line-thin",
+  "editor.mouseWheelZoom": true,
+  "editor.wordWrap": "on",
+  "diffEditor.wordWrap": "on",
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": true,
+
+  // edito live server browser
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "'Operator Mono Lig Light'", // Menlo, Monaco, 'Courier New', monospace
+  "editor.fontLigatures": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+
+  "files.autoSaveDelay": 0,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "terminal.integrated.fontFamily": "'Operator Mono Lig Light'", //Fira code, Coerier new ,monospace
+  "editor.linkedEditing": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.enableSmartCommit": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "editor.inlineSuggest.enabled": false,
+  "git.confirmSync": false,
+  "prettier.singleQuote": true,
+  "editor.smoothScrolling": true,
+  "editor.scrollbar.horizontalScrollbarSize": 10,
+  "editor.scrollbar.verticalScrollbarSize": 8,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
+
+  "workbench.colorTheme": "One Dark Pro Italic Vivid",
+  "code-runner.runInTerminal": true,
+  "tabnine.experimentalAutoImports": true,
+  "editor.minimap.showSlider": "always",
+  "material-icon-theme.opacity": 1,
+  "css.lint.unknownAtRules": "ignore",
+  "editor.foldingImportsByDefault": true,
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.fontSize": 16,
+  "editor.hover.delay": 200,
+  "html.hover.documentation": false,
+  "less.hover.documentation": false,
+  "less.hover.references": false,
+  "scss.hover.documentation": false,
+  "scss.hover.references": false,
+  "notebook.cellToolbarVisibility": "hover",
+  "npm.fetchOnlinePackageInfo": false,
+  "editor.inlineSuggest.suppressSuggestions": false,
+  "terminal.integrated.showLinkHover": false,
+  "tailwindCSS.classAttributes": ["class", "className"],
+  "workbench.editorAssociations": {
+    "*.json": "default"
+  },
+  "terminal.integrated.shellIntegration.suggestEnabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "terminal.integrated.allowMnemonics": true,
+  "editor.minimap.enabled": false
+}
