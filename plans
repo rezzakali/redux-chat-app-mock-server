@@ -1,0 +1,46 @@
+import React, { useState } from 'react';
+
+const PlanSelector = () => {
+  const [selectedPlans, setSelectedPlans] = useState([]);
+
+  const handleCheckboxChange = (event) => {
+    const { value, checked } = event.target;
+
+    if (checked) {
+      setSelectedPlans((prevSelectedPlans) => [...prevSelectedPlans, value]);
+    } else {
+      setSelectedPlans((prevSelectedPlans) =>
+        prevSelectedPlans.filter((plan) => plan !== value)
+      );
+    }
+  };
+
+  return (
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          value="pro"
+          checked={selectedPlans.includes('pro')}
+          onChange={handleCheckboxChange}
+        />
+        Pro
+      </label>
+
+      <label>
+        <input
+          type="checkbox"
+          value="ultimate"
+          checked={selectedPlans.includes('ultimate')}
+          onChange={handleCheckboxChange}
+        />
+        Ultimate
+      </label>
+
+      {selectedPlans.includes('pro') && <p>Show Pro plans here</p>}
+      {selectedPlans.includes('ultimate') && <p>Show Ultimate plans here</p>}
+    </div>
+  );
+};
+
+export default PlanSelector;
